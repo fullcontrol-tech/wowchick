@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+
+  <title>Telegram:Join Group Chat</title>
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=AW-17272678959"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'AW-17272678959');
+  </script>
+
+</head>
+<body>
+
+  <main class="main">
+
+    <div class="main__body">
+
+      <div class="main__img">
+        <img class="main__img-image" src="232.jpg" alt="">
+      </div>
+
+      <div class="main__title">
+        <p>WoW Chicks Agency</p>
+      </div>
+
+      <div class="main__description">
+        Our rates are the best in Dubai<br><br>
+        We accept cash and cryptocurrency! 💸<br><br>
+        We work without interruption! ❤️‍🔥<br><br>
+        <p style="
+          font-size: 25px;
+          font-weight: bold;
+          color: #cbaeff;
+          text-align: center;
+          text-shadow:
+            0 0 1px #cbaeff,
+            0 0 2px #b191f5;
+        ">
+          Booking via Telegram
+        </p><br>
+      </div>
+
+      <div class="tgme_page_action main__button">
+        <button class="tgme_action_button_new shine" style="cursor: pointer;" id="myLink" onclick="handleTelegramButtonClick()">View catalog</button>
+      </div>
+
+      <script>
+        function handleTelegramButtonClick() {
+          // Відправка події "Підписка" в Google Analytics через gtag
+          gtag('event', 'Subscribe', {
+            'event_category': 'button',
+            'event_label': 'View catalog'
+          });
+
+          // Переадресація на Telegram після невеликої затримки
+          setTimeout(function () {
+            window.location.href = 'https://t.me/+vVVojCFNrgw4NWFl';
+          }, 100);
+        }
+      </script>
+
+    </div>
+
+  </main>
+
+</body>
+</html>
