@@ -1,4 +1,7 @@
 {
   "name": "wowchick",
-  "packageManager": "yarn@4.2.2"
+  "packageManager": "yarn@4.2.2",
+  "dependencies": {
+    "vercel": "^44.7.3"
+  }
 }
