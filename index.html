@@ -56,27 +56,25 @@
         </p><br>
       </div>
 
-<div class="tgme_page_action main__button">
-  <button class="tgme_action_button_new shine" style="cursor: pointer;" onclick="handleTelegramButtonClick()">
-    View catalog
-  </button>
-</div>
+      <div class="tgme_page_action main__button">
+        <button class="tgme_action_button_new shine" style="cursor: pointer;" onclick="handleTelegramButtonClick()">
+          View catalog
+        </button>
+      </div>
 
-<script>
-  function handleTelegramButtonClick() {
-    // Відправка події "subscribe" в Google Analytics через gtag
-    gtag('event', 'subscribe', {
-      event_category: 'button',
-      event_label: 'View catalog'
-    });
+      <script>
+        function handleTelegramButtonClick() {
+          // Відправка події конверсії Google Ads
+          gtag('event', 'conversion', {
+            'send_to': 'AW-17272678959/yEJ3CIOkm4QbEK_UoKxA'
+          });
 
-    // Переадресація на Telegram після невеликої затримки
-    setTimeout(function () {
-      window.location.href = 'https://t.me/+vVVojCFNrgw4NWFl';
-    }, 10000); // краще 300-500 мс
-  }
-</script>
-
+          // Затримка, щоб конверсія встигла відправитися
+          setTimeout(function () {
+            window.location.href = 'https://t.me/+vVVojCFNrgw4NWFl';
+          }, 500);
+        }
+      </script>
 
     </div>
 
